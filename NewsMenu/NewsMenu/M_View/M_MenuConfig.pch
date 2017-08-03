@@ -1,0 +1,27 @@
+//
+//  M_MenuConfig.pch
+//  NewsMenu
+//
+//  Created by 刘冉 on 2017/8/2.
+//  Copyright © 2017年 刘冉. All rights reserved.
+//
+
+#ifndef M_MenuConfig_pch
+#define M_MenuConfig_pch
+
+typedef enum{
+    topViewClick = 0,
+    FromTopToTop = 1,
+    FromTopToTopLast = 2,
+    FromTopToBottomHead = 3,
+    FromBottomToTopLast = 4
+} animateType;
+
+#define itemPerLine 4
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define kItemW (kScreenW-padding*(itemPerLine+1))/itemPerLine
+#define kItemH      25
+#define padding     20
+
+#endif /* M_MenuConfig_pch */
